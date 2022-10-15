@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Con trai"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_nameStories"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="500dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_storiess"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="0.5dp"
+                android:text="@string/contrai"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+
+        <TableRow android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_width="match_parent">
+
+            <Button android:layout_width="wrap_content"
+                android:backgroundTint="@color/teal_700"
+                android:text="Back"
+                android:textColor="@color/black"
+                android:layout_marginEnd="80dp"
+                android:textSize="28dp"
+                android:id="@+id/bt_back"
+                android:layout_height="wrap_content"/>
+            <Button android:layout_width="wrap_content"
+                android:backgroundTint="@color/teal_700"
+                android:text="Next"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:id="@+id/bt_next"
+                android:layout_height="wrap_content"/>
+
+
+        </TableRow>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

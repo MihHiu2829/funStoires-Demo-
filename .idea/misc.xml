@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/cover_CODE/code_dev/Moblie_leanring_dev_2022/excer_Lap/App_Truyen_Cuoi/app/src/main/res/drawable/broder_layout_white.xml" value="0.2505" />
+        <entry key="..\:/cover_CODE/code_dev/Moblie_leanring_dev_2022/excer_Lap/App_Truyen_Cuoi/app/src/main/res/layout/activity_main.xml" value="0.22715143428952636" />
+        <entry key="..\:/cover_CODE/code_dev/Moblie_leanring_dev_2022/excer_Lap/App_Truyen_Cuoi/app/src/main/res/layout/content_stoires.xml" value="0.3546875" />
+        <entry key="..\:/cover_CODE/code_dev/Moblie_leanring_dev_2022/excer_Lap/App_Truyen_Cuoi/app/src/main/res/layout/layout_item.xml" value="0.33" />
+        <entry key="..\:/cover_CODE/code_dev/Moblie_leanring_dev_2022/excer_Lap/App_Truyen_Cuoi/app/src/main/res/layout/layout_topic.xml" value="0.3546875" />
+        <entry key="..\:/cover_CODE/code_dev/Moblie_leanring_dev_2022/excer_Lap/App_Truyen_Cuoi/app/src/main/res/layout/m000_sflash.xml" value="0.3546875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

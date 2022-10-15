@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/green_01"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/broder_layout_white"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Design by: Minh Hieu."
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="contract: 0337254483."
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+            <TableRow android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <ImageView android:layout_width="100dp"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/icon_app"
+                    android:layout_height="100dp"/>
+
+                <TextView android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="Truyen cuoi remind"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"/>
+
+            </TableRow>
+    </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/ln_topic_stories"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:layout_height="match_parent">
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+</LinearLayout>
