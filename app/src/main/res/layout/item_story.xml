@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TableRow android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/broder_layout_white"
+    android:layout_width="match_parent">
+    <ImageView
+        android:layout_width="56dp"
+        android:src="@drawable/ic_baseline_tag_faces_24"
+        android:layout_height="56dp"
+        app:tint="@color/black" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="No hinh gi?"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/bt_topicStories"
+        android:layout_height="wrap_content"/>
+</TableRow>
+
+
+</LinearLayout>

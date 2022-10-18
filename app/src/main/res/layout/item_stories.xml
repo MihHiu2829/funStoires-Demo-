@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/broder_layout_white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView android:layout_height="64dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_app"
+            android:layout_width="64dp"/>
+        <TextView android:layout_width="match_parent"
+            android:text="Truyện 1"
+            android:id="@+id/tv_stories"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_height="match_parent"/>
+
+
+    </TableRow>
+
+
+
+</LinearLayout>
