@@ -13,7 +13,6 @@ public abstract class base_ACT <T extends ViewBinding, M extends ViewModel> exte
 
     T binding ;
     M viewModel ;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

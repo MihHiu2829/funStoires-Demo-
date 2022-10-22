@@ -1,34 +1,34 @@
 package com.example.app_truyen_cuoi.View;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.app_truyen_cuoi.R;
+import com.example.app_truyen_cuoi.App;
+import com.example.app_truyen_cuoi.Storagee;
 import com.example.app_truyen_cuoi.ViewModel.m001_mainAct;
 import com.example.app_truyen_cuoi.adapter.storiesAdapter;
 import com.example.app_truyen_cuoi.databinding.ActivityMainBinding;
-import com.example.app_truyen_cuoi.databinding.LayoutTopicBinding;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends base_ACT<ActivityMainBinding, m001_mainAct> {
 
-    ArrayList<DetailStories> listSt ;
+    List<DetailStories> listSt = new ArrayList<>();
     int index = 0  ;
     storiesAdapter adapter ;
     @Override
@@ -231,19 +231,33 @@ public class MainActivity extends base_ACT<ActivityMainBinding, m001_mainAct> {
 
         adapter = new storiesAdapter(this, listSt) ;
 
+
+        binding.rvStories.setAdapter(adapter);
         adapter.getStories().observe(this, new Observer<DetailStories>() {
             @Override
-            public void onChanged(DetailStories stories) {
+            public void onChanged(DetailStories stories ) {
                 ShowDetailStories(stories);
             }
         });
-        binding.rvStories.setAdapter(adapter);
     }
 
     private void ShowDetailStories(DetailStories stories) {
-        Toast.makeText(MainActivity.this, stories.NameStory +"\n\n"+ stories.DetailStories, Toast.LENGTH_SHORT).show();
+
+//        Toast.makeText(MainActivity.this, stories.NameStory +"\n\n"+ stories.DetailStories, Toast.LENGTH_SHORT).show();
+
+
+        App.getInstance().getStoragee().listStory = listSt ; // vi bi loi null, minh ko bk cach fix loi nen
+        App.getInstance().getStoragee().storyy = stories ;
+
+;
+//       App.getInstance().getStoragee().setStorage(listSt,stories);
+//        App.getInstance().getStoragee().storyy = stories ;
+
+        startActivity(new Intent(this,m003_DetailTopic.class));
 
     }
+
+
 
     @Override
     protected ActivityMainBinding initViewBinding() {

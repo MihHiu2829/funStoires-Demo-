@@ -1,6 +1,7 @@
 package com.example.app_truyen_cuoi.adapter;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,12 +20,12 @@ import java.util.List;
 public class storiesAdapter extends RecyclerView.Adapter<storiesAdapter.Storyholder> {
     private Context context ;
     private List<DetailStories> listStory  ;
+    private  DetailStories data ;
     private MutableLiveData<DetailStories> stories = new MutableLiveData<>() ;
     public storiesAdapter(Context context, List<DetailStories> listStory) {
         this.context = context;
         this.listStory = listStory;
     }
-
     public MutableLiveData<DetailStories> getStories() {
         return stories;
     }
@@ -38,9 +39,10 @@ public class storiesAdapter extends RecyclerView.Adapter<storiesAdapter.Storyhol
 
     @Override
     public void onBindViewHolder(@NonNull Storyholder holder, int position) {
-                DetailStories data = listStory.get(position) ;
+                 data = listStory.get(position) ;
                 holder.storyName.setText(data.getNameStory());
                 holder.storyName.setTag(data);
+                  holder.lnBG.setBackgroundResource(data.isSelected() ? R.drawable.broder_layout_green : R.drawable.broder_layout_white);
     }
 
     @Override
@@ -50,9 +52,13 @@ public class storiesAdapter extends RecyclerView.Adapter<storiesAdapter.Storyhol
 
     public  class  Storyholder extends RecyclerView.ViewHolder {
         TextView storyName;
+//        View ln_stories ;  (1)
+        View lnBG ;
         public Storyholder(@NonNull View view) {
             super(view);
             storyName = view.findViewById(R.id.bt_topicStories) ;
+            lnBG = view.findViewById(R.id.ln_bg) ;  // (1)
+
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -63,8 +69,14 @@ public class storiesAdapter extends RecyclerView.Adapter<storiesAdapter.Storyhol
         }
 
         private void clickItemStory(DetailStories stroies) {
-            stories.postValue(stroies);
-
+            stroies.setSelected(true);
+                if(stories.getValue() != null)
+                {
+                    stories.getValue().setSelected(false);
+                }
+                stories.postValue(stroies);
+                // refresh toàn bộ item của recycle view
+                notifyItemRangeChanged(0,listStory.size());
 
         }
 
