@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <TableRow android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+
+        <ImageView android:layout_height="60dp"
+            android:src="@drawable/ic_menu_24"
+            android:layout_width="60dp"
+            android:id="@+id/bt_drawer"
+            app:tint="@color/black" />
+        <TextView android:layout_width="match_parent"
+            android:text="Con Trai"
+            android:id="@+id/tv_nameStories"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"/>
+    </TableRow>
+
 
     <TextView
         android:layout_width="match_parent"

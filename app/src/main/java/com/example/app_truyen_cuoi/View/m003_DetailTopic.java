@@ -15,6 +15,12 @@ public class m003_DetailTopic extends base_ACT<M003DetailtopicBinding, COMMON_VM
     protected void initViews() {
         detailStoriesAdapter adapter = new detailStoriesAdapter(this, App.getInstance().getStoragee().listStory) ;
         binding.vpStories.setAdapter(adapter);
+
+
+
+        //goto selected story
+        int Selected = App.getInstance().getStoragee().listStory.indexOf(App.getInstance().getStoragee().storyy) ;
+        binding.vpStories.setCurrentItem(Selected,true);
     }
 
     @Override

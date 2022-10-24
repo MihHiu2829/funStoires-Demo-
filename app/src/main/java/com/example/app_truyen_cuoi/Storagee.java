@@ -9,11 +9,7 @@ import java.util.List;
 
 public class Storagee  {
 
-    public List<DetailStories> listStory = new ArrayList<>();
-    public DetailStories storyy   ;
-    public void setStorage(List<DetailStories> lStory, DetailStories story)
-    {
-        listStory = new ArrayList<>(lStory) ;
-        storyy = new DetailStories(story.getNameStory(),story.getDetailStories()) ;
-    }
+    public List<DetailStories> listStory ;
+    public DetailStories storyy  ;
+
 }

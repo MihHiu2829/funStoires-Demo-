@@ -21,7 +21,9 @@ public class storiesAdapter extends RecyclerView.Adapter<storiesAdapter.Storyhol
     private Context context ;
     private List<DetailStories> listStory  ;
     private  DetailStories data ;
-    private MutableLiveData<DetailStories> stories = new MutableLiveData<>() ;
+    private MutableLiveData<DetailStories> stories  = new MutableLiveData<>() ;
+
+
     public storiesAdapter(Context context, List<DetailStories> listStory) {
         this.context = context;
         this.listStory = listStory;

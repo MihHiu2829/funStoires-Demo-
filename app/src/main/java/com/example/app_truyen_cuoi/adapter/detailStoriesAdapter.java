@@ -12,15 +12,18 @@ import androidx.viewpager.widget.PagerAdapter;
 import com.example.app_truyen_cuoi.R;
 import com.example.app_truyen_cuoi.View.DetailStories;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class detailStoriesAdapter extends PagerAdapter {
     private Context context ;
-    private List<DetailStories> listStory  ;
+    private List<DetailStories> listStory ;
+
 
     public detailStoriesAdapter(Context context, List<DetailStories> listStory) {
         this.context = context;
         this.listStory = listStory;
+
     }
 
     @Override

@@ -245,7 +245,6 @@ public class MainActivity extends base_ACT<ActivityMainBinding, m001_mainAct> {
 
 //        Toast.makeText(MainActivity.this, stories.NameStory +"\n\n"+ stories.DetailStories, Toast.LENGTH_SHORT).show();
 
-
         App.getInstance().getStoragee().listStory = listSt ; // vi bi loi null, minh ko bk cach fix loi nen
         App.getInstance().getStoragee().storyy = stories ;
 

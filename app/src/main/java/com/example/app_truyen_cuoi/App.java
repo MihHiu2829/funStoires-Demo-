@@ -8,13 +8,12 @@ public class App extends Application {
 
     public void onCreate() {
         super.onCreate();
-        storage = new Storagee() ;
         instance = this ;
+        storage = new Storagee() ;
     }
 
 
     public  Storagee getStoragee() {
-        storage = new Storagee(); ;
         return storage;
     }
 
