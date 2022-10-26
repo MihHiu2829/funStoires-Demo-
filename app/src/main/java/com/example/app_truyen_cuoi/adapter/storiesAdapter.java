@@ -78,7 +78,7 @@ public class storiesAdapter extends RecyclerView.Adapter<storiesAdapter.Storyhol
                 }
                 stories.postValue(stroies);
                 // refresh toàn bộ item của recycle view
-                notifyItemRangeChanged(0,listStory.size());
+                    notifyItemRangeChanged(0,listStory.size());
 
         }
 
