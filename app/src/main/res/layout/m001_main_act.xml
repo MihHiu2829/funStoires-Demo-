@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lo_Dawer"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/tv_toolBar"
+            layout="@layout/m000_toolbar"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/m001_componet_view2"
+            android:scrollbars="vertical"
+            android:padding="10dp"
+            android:id="@+id/ryc_view" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:layout_height="match_parent">
+
+<!--        <include-->
+<!--            android:id="@+id/Ln_drawer"-->
+<!--            layout="@layout/m001_view_left"/>-->
+
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="155dp">
+
+                    <ImageView android:layout_height="155dp"
+                        android:src="@drawable/icon_avt"
+                        android:layout_width="180dp"/>
+                    <LinearLayout android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Truyện ko cừi 😏"
+                            android:textSize="22dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textColorHint="@color/teal_700"
+                            android:gravity="center"
+                            android:layout_height="44dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Desgin by:"
+                            android:paddingStart="20dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Doan Minh Hieu"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:paddingStart="50dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TableRow android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView android:layout_height="65dp"
+                                android:src="@drawable/icon_avt"
+                                android:layout_width="65dp"/>
+                            <TextView android:layout_width="match_parent"
+                                android:text="Em dag tap lam app, may dai ca tha em:))"
+                                android:gravity="center_vertical"
+                                android:layout_height="match_parent"/>
+                        </TableRow>
+
+                    </LinearLayout>
+                </TableRow>
+
+
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/blue001"
+                    android:id="@+id/ln_Topic"
+                    android:layout_height="match_parent">
+
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

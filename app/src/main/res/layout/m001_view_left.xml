@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="155dp">
+
+            <ImageView android:layout_height="155dp"
+                android:src="@drawable/icon_avt"
+                android:layout_width="180dp"/>
+            <LinearLayout android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Truyện ko cừi 😏"
+                    android:textSize="22dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textColorHint="@color/teal_700"
+                    android:gravity="center"
+                    android:layout_height="44dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Desgin by:"
+                    android:paddingStart="20dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Doan Minh Hieu"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:paddingStart="50dp"
+                    android:layout_height="wrap_content"/>
+
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView android:layout_height="65dp"
+                        android:src="@drawable/icon_avt"
+                        android:layout_width="65dp"/>
+                    <TextView android:layout_width="match_parent"
+                        android:text="Em dag tap lam app, may dai ca tha em:))"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"/>
+                </TableRow>
+
+            </LinearLayout>
+        </TableRow>
+
+
+
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:id="@+id/rclv_story"/>
+
+</LinearLayout>

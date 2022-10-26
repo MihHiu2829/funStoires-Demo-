@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="130dp"
+        android:src="@drawable/icon_avt"
+        android:layout_height="110dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Truyen Khong Cuoi"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
